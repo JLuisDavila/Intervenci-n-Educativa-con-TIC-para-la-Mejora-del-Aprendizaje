@@ -1,60 +1,144 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intervención Educativa con TIC para la Mejora del Aprendizaje</title>
-    <link rel="stylesheet" href="css/style.css?v=5">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intervención Educativa con TIC para la Mejora del Aprendizaje</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f4fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #5a2d82;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #5a2d82;
+      border-bottom: 2px solid #5a2d82;
+      padding-bottom: 0.5rem;
+    }
+
+    .intro-images {
+      display: flex;
+      justify-content: space-around;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+    }
+
+    .intro-images img {
+      width: 30%;
+      min-width: 180px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .readme-button {
+      display: inline-block;
+      background-color: #5a2d82;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .readme-button:hover {
+      background-color: #472366;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-    <!-- CABECERA -->
-    <header class="header">
-        <h1>Intervención Educativa con TIC para la Mejora del Aprendizaje</h1>
-    </header>
+  <header>
+    <h1>Intervención Educativa con TIC para la Mejora del Aprendizaje</h1>
+  </header>
 
-    <!-- BARRA LATERAL -->
-    <aside class="sidebar">
-        <h2>Secciones</h2>
-        <nav>
-            <a href="index.html">Introducción</a>
-            <hr>
-            <a href="sexto.html">Sexto de Primaria</a>
-            <hr>
-            <a href="primero-sec.html">Primero de Secundaria</a>
-            <hr>
-            <a href="segundo-sec.html">Segundo de Secundaria</a>
-            <hr>
-            <a href="tercero-sec.html">Tercero de Secundaria</a>
-            <hr>
-        </nav>
+  <main>
+    <!-- Introducción -->
+    <section id="introduccion">
+      <h2>Introducción</h2>
+      <p>
+        Este sitio web forma parte de un proyecto educativo enfocado en integrar las Tecnologías
+        de la Información y la Comunicación (TIC) en la práctica docente. Su propósito es
+        ofrecer un espacio digital donde se puedan registrar, analizar y compartir experiencias
+        de aprendizaje innovadoras que promuevan la mejora continua de los procesos educativos.
+      </p>
+      <p>
+        A través de esta plataforma, los docentes pueden planear, implementar, evaluar y reflexionar
+        sobre sus intervenciones educativas, fortaleciendo así su práctica profesional mediante
+        la sistematización y el uso de herramientas digitales.
+      </p>
 
-        <!-- BOTÓN AL README -->
-        <div class="readme-btn">
-            <a href="https://github.com/JLuisDavila/Intervencion-Educativa-con-TIC-para-la-Mejora-del-Aprendizaje#readme" target="_blank">
-                📘 Acerca del Proyecto
-            </a>
-        </div>
-    </aside>
+      <div class="intro-images">
+        <img src="https://picsum.photos/300/200?random=1" alt="imagen educativa 1">
+        <img src="https://picsum.photos/300/200?random=2" alt="imagen educativa 2">
+        <img src="https://picsum.photos/300/200?random=3" alt="imagen educativa 3">
+      </div>
+    </section>
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <main class="content">
-        <section>
-            <h2>Introducción</h2>
-            <p>
-                El presente proyecto tiene como objetivo fortalecer los procesos de enseñanza y aprendizaje mediante el uso de tecnologías de la información y la comunicación (TIC). 
-                A través de estrategias didácticas innovadoras y el diseño de recursos digitales, se busca fomentar el pensamiento crítico, la creatividad y la autonomía de los estudiantes en distintos niveles educativos.
-            </p>
-            <p>
-                La intervención está diseñada para ser flexible, integrando herramientas tecnológicas que favorezcan la planeación docente, la implementación de experiencias de aprendizaje significativas y la reflexión sobre la práctica educativa. 
-                Asimismo, pretende generar espacios colaborativos de intercambio de conocimiento entre docentes, alumnos y comunidad educativa.
-            </p>
+    <!-- Sobre este proyecto -->
+    <section id="readme-section">
+      <h2>📘 Sobre este proyecto</h2>
+      <p>
+        Este sitio web fue creado como parte del proyecto <strong>Intervención Educativa con TIC para la Mejora del Aprendizaje</strong>.
+        Su propósito es documentar y reflexionar sobre prácticas educativas apoyadas en tecnologías digitales.
+      </p>
+      <ul>
+        <li>Permite registrar información sobre planeación, implementación, evaluación y reflexión.</li>
+        <li>Organiza experiencias por nivel educativo.</li>
+        <li>Incluye secciones para documentación de materiales y recursos creados.</li>
+      </ul>
+      <p>
+        Puedes consultar la documentación completa del proyecto en el siguiente enlace:
+      </p>
+      <p>
+        <a href="https://github.com/JLuisDavila/Intervencion-Educativa-con-TIC-para-la-Mejora-del-Aprendizaje#readme"
+           target="_blank"
+           class="readme-button">
+          Ver README en GitHub
+        </a>
+      </p>
+    </section>
+  </main>
 
-            <div class="intro-images">
-                <img src="images/educacion1.jpg" alt="Educación y tecnología">
-                <img src="images/educacion2.jpg" alt="Aprendizaje colaborativo">
-                <img src="images/educacion3.jpg" alt="Innovación educativa">
-            </div>
-        </section>
-    </main>
+  <footer>
+    © 2025 | Intervención Educativa con TIC para la Mejora del Aprendizaje · Contacto: 
+    <a href="mailto:jldavila@ejemplo.com">jldavila@ejemplo.com</a>
+  </footer>
 </body>
 </html>
