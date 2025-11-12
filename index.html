@@ -4,232 +4,51 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intervención Educativa con TIC para la Mejora del Aprendizaje</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <style>
-    :root {
-      --morado: #5a2d82;
-      --morado-oscuro: #472366;
-      --lila-claro: #d7c3f1;
-      --fondo: #f5f4fa;
-    }
-
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--fondo);
-      color: #333;
-      display: flex;
-      min-height: 100vh;
-    }
-
-    /* === BARRA LATERAL === */
-    nav {
-      width: 250px;
-      background-color: var(--lila-claro);
-      color: var(--morado);
-      display: flex;
-      flex-direction: column;
-      padding: 1.5rem 1rem;
-      box-shadow: 2px 0 6px rgba(0,0,0,0.1);
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      left: 0;
-    }
-
-    nav h2 {
-      text-align: center;
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
-      border-bottom: 2px solid var(--morado);
-      padding-bottom: .5rem;
-    }
-
-    nav a {
-      color: var(--morado);
-      text-decoration: none;
-      padding: 0.6rem 0.8rem;
-      display: block;
-      border-bottom: 1px solid rgba(90, 45, 130, 0.3);
-      transition: background 0.3s, color 0.3s;
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      background-color: var(--morado);
-      color: white;
-      border-radius: 4px;
-    }
-
-    /* === CONTENIDO PRINCIPAL === */
-    .content {
-      margin-left: 260px;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
-
-    header {
-      background-color: var(--morado);
-      color: white;
-      text-align: center;
-      padding: 1.5rem 1rem;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 1.8rem;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-
-    section {
-      background: white;
-      border-radius: 12px;
-      padding: 2rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    h2 {
-      color: var(--morado);
-      border-bottom: 2px solid var(--morado);
-      padding-bottom: 0.5rem;
-    }
-
-    .intro-images {
-      display: flex;
-      justify-content: space-around;
-      gap: 1rem;
-      flex-wrap: wrap;
-      margin-top: 1.5rem;
-    }
-
-    .intro-images img {
-      width: 30%;
-      min-width: 180px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .readme-button {
-      display: inline-block;
-      background-color: var(--morado);
-      color: white;
-      padding: 10px 18px;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-
-    .readme-button:hover {
-      background-color: var(--morado-oscuro);
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #666;
-    }
-
-    footer a {
-      color: var(--morado);
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 768px) {
-      nav {
-        position: relative;
-        width: 100%;
-        flex-direction: row;
-        overflow-x: auto;
-      }
-      nav h2 { display: none; }
-      nav a {
-        flex: 1;
-        text-align: center;
-        border-bottom: none;
-        border-right: 1px solid rgba(90, 45, 130, 0.3);
-      }
-      .content {
-        margin-left: 0;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <!-- Barra lateral -->
   <nav>
     <h2>Secciones</h2>
-    <a href="secciones/sexto.html">Sexto de Primaria</a>
-    <a href="secciones/primero.html">Primero de Secundaria</a>
-    <a href="secciones/segundo.html">Segundo de Secundaria</a>
-    <a href="secciones/tercero.html">Tercero de Secundaria</a>
+    <a href="#inicio">🏠 Inicio</a>
+    <a href="#introduccion">📘 Introducción</a>
+    <hr>
+    <a href="#">Sexto de Primaria</a>
+    <a href="#">Primero de Secundaria</a>
+    <a href="#">Segundo de Secundaria</a>
+    <a href="#">Tercero de Secundaria</a>
   </nav>
 
   <div class="content">
-    <header>
+    <header id="inicio">
       <h1>Intervención Educativa con TIC para la Mejora del Aprendizaje</h1>
     </header>
 
     <main>
-      <!-- Introducción -->
       <section id="introduccion">
         <h2>Introducción</h2>
         <p>
-          Este sitio web forma parte de un proyecto educativo enfocado en integrar las Tecnologías
-          de la Información y la Comunicación (TIC) en la práctica docente. Su propósito es
-          ofrecer un espacio digital donde se puedan registrar, analizar y compartir experiencias
-          de aprendizaje innovadoras que promuevan la mejora continua de los procesos educativos.
+          Este proyecto tiene como propósito integrar las Tecnologías de la Información y la Comunicación (TIC)
+          en los procesos de enseñanza y aprendizaje, buscando transformar la práctica educativa mediante estrategias
+          innovadoras que promuevan la participación, la creatividad y la reflexión pedagógica.
         </p>
         <p>
-          A través de esta plataforma, los docentes pueden planear, implementar, evaluar y reflexionar
-          sobre sus intervenciones educativas, fortaleciendo así su práctica profesional mediante
-          la sistematización y el uso de herramientas digitales.
+          A través de esta intervención se pretende fortalecer la autonomía del estudiante, el pensamiento crítico
+          y la apropiación significativa de los contenidos escolares, mediante el uso responsable y creativo de
+          herramientas digitales en distintos contextos educativos.
         </p>
 
         <div class="intro-images">
-          <img src="https://picsum.photos/300/200?random=1" alt="imagen educativa 1">
-          <img src="https://picsum.photos/300/200?random=2" alt="imagen educativa 2">
-          <img src="https://picsum.photos/300/200?random=3" alt="imagen educativa 3">
+          <img src="https://picsum.photos/300/200?random=1" alt="Educación y tecnología 1">
+          <img src="https://picsum.photos/300/200?random=2" alt="Educación y tecnología 2">
+          <img src="https://picsum.photos/300/200?random=3" alt="Educación y tecnología 3">
         </div>
       </section>
+    </main>
 
-      <!-- Sobre este proyecto -->
-<section id="readme-section">
-  <h2>📘 Sobre este proyecto</h2>
-  <div id="readme-content">Cargando contenido...</div>
-</section>
-
-<script>
-  // Cargar automáticamente el README desde GitHub
-  fetch("https://raw.githubusercontent.com/JLuisDavila/Intervencion-Educativa-con-TIC-para-la-Mejora-del-Aprendizaje/main/README.md")
-    .then(response => response.text())
-    .then(data => {
-      // Convertir el markdown a HTML básico
-      const html = data
-        .replace(/^# (.*$)/gim, '<h1>$1</h1>')
-        .replace(/^## (.*$)/gim, '<h2>$1</h2>')
-        .replace(/^### (.*$)/gim, '<h3>$1</h3>')
-        .replace(/\*\*(.*)\*\*/gim, '<b>$1</b>')
-        .replace(/\*(.*)\*/gim, '<i>$1</i>')
-        .replace(/\[(.*?)\]\((.*?)\)/gim, "<a href='$2' target='_blank'>$1</a>")
-        .replace(/\n$/gim, '<br />');
-
-      document.getElementById("readme-content").innerHTML = html;
-    })
-    .catch(err => {
-      document.getElementById("readme-content").innerHTML =
-        "No se pudo cargar el README. Verifica la ruta o la conexión.";
-      console.error(err);
-    });
-</script>
+    <footer>
+      <p>© 2025 Intervención Educativa con TIC — Desarrollado por José Luis Dávila</p>
+    </footer>
+  </div>
+</body>
+</html>
