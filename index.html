@@ -205,34 +205,31 @@
       </section>
 
       <!-- Sobre este proyecto -->
-      <section id="readme-section">
-        <h2>📘 Sobre este proyecto</h2>
-        <p>
-          Este sitio web fue creado como parte del proyecto <strong>Intervención Educativa con TIC para la Mejora del Aprendizaje</strong>.
-          Su propósito es documentar y reflexionar sobre prácticas educativas apoyadas en tecnologías digitales.
-        </p>
-        <ul>
-          <li>Permite registrar información sobre planeación, implementación, evaluación y reflexión.</li>
-          <li>Organiza experiencias por nivel educativo.</li>
-          <li>Incluye secciones para documentación de materiales y recursos creados.</li>
-        </ul>
-        <p>
-          Puedes consultar la documentación completa del proyecto en el siguiente enlace:
-        </p>
-        <p>
-         <a href="https://github.com/JLuisDavila/Intervencion-Educativa-con-TIC-para-la-Mejora-del-Aprendizaje"
-   target="_blank"
-   class="readme-button">
-  Ver README en GitHub
-</a>
-        </p>
-      </section>
-    </main>
+<section id="readme-section">
+  <h2>📘 Sobre este proyecto</h2>
+  <div id="readme-content">Cargando contenido...</div>
+</section>
 
-    <footer>
-      © 2025 | Intervención Educativa con TIC para la Mejora del Aprendizaje · 
-      Contacto: <a href="mailto:jldavila@ejemplo.com">jldavila@ejemplo.com</a>
-    </footer>
-  </div>
-</body>
-</html>
+<script>
+  // Cargar automáticamente el README desde GitHub
+  fetch("https://raw.githubusercontent.com/JLuisDavila/Intervencion-Educativa-con-TIC-para-la-Mejora-del-Aprendizaje/main/README.md")
+    .then(response => response.text())
+    .then(data => {
+      // Convertir el markdown a HTML básico
+      const html = data
+        .replace(/^# (.*$)/gim, '<h1>$1</h1>')
+        .replace(/^## (.*$)/gim, '<h2>$1</h2>')
+        .replace(/^### (.*$)/gim, '<h3>$1</h3>')
+        .replace(/\*\*(.*)\*\*/gim, '<b>$1</b>')
+        .replace(/\*(.*)\*/gim, '<i>$1</i>')
+        .replace(/\[(.*?)\]\((.*?)\)/gim, "<a href='$2' target='_blank'>$1</a>")
+        .replace(/\n$/gim, '<br />');
+
+      document.getElementById("readme-content").innerHTML = html;
+    })
+    .catch(err => {
+      document.getElementById("readme-content").innerHTML =
+        "No se pudo cargar el README. Verifica la ruta o la conexión.";
+      console.error(err);
+    });
+</script>
