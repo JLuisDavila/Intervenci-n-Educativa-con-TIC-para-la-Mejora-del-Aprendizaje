@@ -113,3 +113,20 @@ a:hover {
         padding-top: 150px;
     }
 }
+
+/* === Fila de imágenes en la introducción === */
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;          /* separación entre imágenes */
+    margin-top: 30px;   /* espacio respecto al texto */
+}
+
+.image-row img {
+    width: 30%;         /* todas del mismo tamaño */
+    max-width: 280px;   /* evita que crezcan demasiado */
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.18);
+}
+
